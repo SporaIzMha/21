@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hrambton <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/17 16:49:26 by hrambton          #+#    #+#             */
-/*   Updated: 2020/11/17 20:03:21 by hrambton         ###   ########.fr       */
+/*   Created: 2020/11/06 17:24:00 by hrambton          #+#    #+#             */
+/*   Updated: 2020/11/06 18:19:47 by hrambton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+void	*ft_memcpy(void *str, const void *src, size_t num)
 {
-	size_t little_l;
+	size_t i;
 
-	little_l = ft_strlen(little);
-	if (*little == '\0')
-		return ((char *)big);
-	while (*big && little_l <= len--)
+	i = 0;
+	while (i < num)
 	{
-		if (ft_strncmp(big, little, little_l) == 0)
-			return ((char *)big);
-		big++;
+		*(unsigned char*)(str + i) = *(unsigned char*)(src + i);
+		i++;
 	}
-	return (NULL);
+	return (str);
 }
