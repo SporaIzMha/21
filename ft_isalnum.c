@@ -6,7 +6,7 @@
 /*   By: hrambton <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 16:04:40 by hrambton          #+#    #+#             */
-/*   Updated: 2020/11/17 16:04:59 by hrambton         ###   ########.fr       */
+/*   Updated: 2020/11/18 19:21:54 by hrambton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int	ft_isalnum(int ch)
 {
-	return (ft_isalpha(ch) || ft_isdigit(ch));
+	return ((ft_isalpha(ch) || ft_isdigit(ch)));
 }
