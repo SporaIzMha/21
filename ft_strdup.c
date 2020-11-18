@@ -24,7 +24,7 @@ void	*ft_strdup(const char *str)
 	while (str[i])
 	{
 		str2[i] = str[i];
-		i++
+		i++;
 	}
 	str2[i] = '\0';
 	return (str2);
