@@ -15,11 +15,13 @@
 void	*ft_memcpy(void *str, const void *src, size_t num)
 {
 	size_t i;
-
+	
+	if (str == src || num < 1)
+		return (str);
 	i = 0;
 	while (i < num)
 	{
-		*(unsigned char*)(str + i) = *(unsigned char*)(src + i);
+		*((unsigned char*)str + i) = *((unsigned char*)src + i);
 		i++;
 	}
 	return (str);
