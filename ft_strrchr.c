@@ -6,7 +6,7 @@
 /*   By: hrambton <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 16:50:20 by hrambton          #+#    #+#             */
-/*   Updated: 2020/11/17 16:51:05 by hrambton         ###   ########.fr       */
+/*   Updated: 2020/11/18 21:12:58 by hrambton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ char	*ft_strrchr(const char *str, int ch)
 			return ((char *)(str + i));
 		i--;
 	}
-	return(NULL);
+	return (NULL);
 }
