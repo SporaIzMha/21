@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
-char	**ft_split(char const *s, char c)
+char  **ft_split(char const *s, char c)
 {
+  char    **res;
+  char    **start;
+  char    *wend;
+  size_t    k;
+  
+  if (!s)
+    return (NULL);
+  if (!(res = (char **)malloc((ft_count_words(s,c)+1
 }
