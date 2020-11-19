@@ -6,16 +6,16 @@
 /*   By: hrambton <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/06 17:24:00 by hrambton          #+#    #+#             */
-/*   Updated: 2020/11/06 18:19:47 by hrambton         ###   ########.fr       */
+/*   Updated: 2020/11/19 11:59:13 by hrambton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *str, const void *src, size_t num)
+void		*ft_memcpy(void *str, const void *src, size_t num)
 {
-	size_t i;
-	
+	size_t	i;
+
 	if (str == src || num < 1)
 		return (str);
 	i = 0;

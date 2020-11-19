@@ -6,16 +6,16 @@
 /*   By: hrambton <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 16:22:23 by hrambton          #+#    #+#             */
-/*   Updated: 2020/11/19 02:35:53 by hrambton         ###   ########.fr       */
+/*   Updated: 2020/11/19 11:59:38 by hrambton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *str, int c, size_t num)
+void		*ft_memchr(const void *str, int c, size_t num)
 {
 	size_t	i;
-	
+
 	i = 0;
 	while (i < num)
 	{

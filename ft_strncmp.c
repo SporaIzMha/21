@@ -6,7 +6,7 @@
 /*   By: hrambton <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 16:48:45 by hrambton          #+#    #+#             */
-/*   Updated: 2020/11/18 21:28:20 by hrambton         ###   ########.fr       */
+/*   Updated: 2020/11/19 12:14:07 by hrambton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,7 @@ int	ft_strncmp(const char *str1, const char *str2, size_t num)
 		str2++;
 		i++;
 	}
+	if (i == num)
+		return (0);
 	return ((unsigned char)*str1 - (unsigned char)*str2);
 }

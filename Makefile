@@ -1,11 +1,22 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: hrambton <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2020/11/19 04:26:44 by hrambton          #+#    #+#              #
+#    Updated: 2020/11/19 05:49:30 by hrambton         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
 NAME		= libft.a
-CC		= gcc
+CC			= gcc
 CFLAGS		= -Wall -Werror -Wextra
-RM 		= rm -f
+RM			= rm -f
 
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
 
 SRCS		=		ft_isalnum.c ft_isprint.c ft_memcmp.c  ft_putchar_fd.c ft_split.c \
 					ft_strlcat.c ft_strncmp.c ft_substr.c ft_atoi.c ft_isalpha.c \
@@ -20,6 +31,8 @@ BONUS		=		ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
 					ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
 					ft_lstclear.c ft_lstiter.c ft_lstmap.c
 BONUS_OBJS	= $(BONUS:.c=.o)
+
+HEADER		= libft.h
 
 all:		$(NAME)
 

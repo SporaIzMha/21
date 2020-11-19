@@ -6,7 +6,7 @@
 /*   By: hrambton <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 16:00:58 by hrambton          #+#    #+#             */
-/*   Updated: 2020/11/19 03:31:05 by hrambton         ###   ########.fr       */
+/*   Updated: 2020/11/19 13:17:51 by hrambton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int i;
-	int r;
-	int znak;
+	int				i;
+	unsigned long	r;
+	int				znak;
 
 	i = 0;
 	r = 0;
