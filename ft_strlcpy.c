@@ -6,7 +6,7 @@
 /*   By: hrambton <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 16:40:23 by hrambton          #+#    #+#             */
-/*   Updated: 2020/11/17 16:59:09 by hrambton         ###   ########.fr       */
+/*   Updated: 2020/11/19 03:29:51 by hrambton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t i;
 
+	if (!dst || !src)
+		return (0);
 	i = 0;
 	if (size > 0)
 	{

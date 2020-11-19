@@ -6,7 +6,7 @@
 /*   By: hrambton <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 16:13:15 by hrambton          #+#    #+#             */
-/*   Updated: 2020/11/17 16:15:12 by hrambton         ###   ########.fr       */
+/*   Updated: 2020/11/19 02:17:16 by hrambton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),
 	t_list *new_l;
 
 	new_l = NULL;
-	if (!lst || !f || !del)
+	if (!lst || !f)
 		return (new_l);
 	while (lst)
 	{
 		if (!(new = ft_lstnew((*f)(lst->content))))
 		{
-			ft_lstclear(&newlst, del);
+			ft_lstclear(&new_l, del);
 			return (NULL);
 		}
 		ft_lstadd_back(&new_l, new);

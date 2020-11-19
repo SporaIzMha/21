@@ -6,7 +6,7 @@
 /*   By: hrambton <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 16:03:59 by hrambton          #+#    #+#             */
-/*   Updated: 2020/11/17 16:04:27 by hrambton         ###   ########.fr       */
+/*   Updated: 2020/11/19 02:31:25 by hrambton         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,17 @@
 
 void	*ft_calloc(size_t num, size_t size)
 {
-	void *x;
+	void	*x;
+	size_t	i;
 
-	x = (void *)malloc(num * size);
+	i = 0;
+	x = malloc(num * size);
 	if (!x)
 		return (NULL);
-	ft_bzero(x, num);
+	while (i < (num * size))
+	{
+		*((unsigned char *)x + i) = 0;
+		i++;
+	}
 	return (x);
 }
