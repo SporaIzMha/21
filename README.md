@@ -1,1 +1,2 @@
-# 21
+# libft
+school 21 / 42
